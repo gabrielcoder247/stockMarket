@@ -1,3 +1,4 @@
+import {StockPriceService} from './stockPrice-service/stock-price.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [StockPriceService],  //Add service to provider
   bootstrap: [AppComponent]
 })
 export class AppModule { }
